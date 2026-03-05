@@ -1,0 +1,29 @@
+{{!< default}}
+
+<main id="site-main" class="site-main outer">
+<div class="inner posts">
+    <div class="post-feed">
+
+        <section class="post-card post-card-large">
+            <div class="post-card-content">
+                <div class="post-card-content-link">
+                    <header class="post-card-header">
+                        <h2 class="post-card-title">NeuroBook Academy</h2>
+                    </header>
+                    <div class="post-card-excerpt">
+                        Guided lessons and activity modules for your academy area.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{#foreach posts}}
+            {{> "post-card"}}
+        {{/foreach}}
+
+    </div>
+
+    {{pagination}}
+
+</div>
+</main>

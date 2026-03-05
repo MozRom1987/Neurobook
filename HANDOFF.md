@@ -21,6 +21,9 @@
   - Commit: `1e918a2`
   - Repo: `https://github.com/MozRom1987/Neurobook`
   - Branch: `main`
+- Sprint 2 started:
+  - Added `academy.hbs` for academy collection listing
+  - Added `routes.yaml` scaffold with `/academy/` collection filtered by `tag:academy`
 
 ## Important Files Changed
 - `default.hbs`
@@ -49,11 +52,12 @@ docker logs -f neurobook-ghost
 ## What Still Needs To Be Done (Next)
 1. Replace placeholder card images/text on homepage with final content.
 2. Replace temporary card links (now mostly `/parents-guide/`) with real target URLs.
-3. Fill content on pages:
+3. Apply `routes.yaml` in Ghost Admin (`Settings -> Labs -> Routes`) and upload this file.
+4. Create/mark academy posts with tag `academy` so `/academy/` has content.
+5. Fill content on pages:
    - `/pricing/`, `/cards/`, `/parents-guide/`, `/privacy/`, `/terms/`
-4. QA pass on desktop/mobile after real content is inserted.
-5. Start Sprint 2:
-   - Academy routing
+6. QA pass on desktop/mobile after real content is inserted.
+7. Continue Sprint 2:
    - Paid gating
    - Stripe automation
    - Cards upgrade tier

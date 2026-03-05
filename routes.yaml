@@ -1,0 +1,13 @@
+routes:
+  /:
+    template: index
+
+collections:
+  /academy/:
+    permalink: /academy/{slug}/
+    template: academy
+    filter: tag:academy
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/
