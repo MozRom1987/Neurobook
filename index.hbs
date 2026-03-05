@@ -20,7 +20,7 @@ into the {body} of the default.hbs template --}}
         {{/if}}
     {{/if}}
 
-{{#match @custom.header_style "!=" "Hidden"}}
+    {{#match @custom.header_style "!=" "Hidden"}}
         <div class="site-header-inner inner">
             {{#match @custom.navigation_layout "Logo on cover"}}
                 {{#if @site.logo}}
@@ -29,12 +29,13 @@ into the {body} of the default.hbs template --}}
                     <h1 class="site-title">{{@site.title}}</h1>
                 {{/if}}
             {{/match}}
-            {{#if @site.description}}
-                <p class="site-description">{{@site.description}}</p>
-            {{/if}}
+            <h1 class="site-description">Lorem ipsum dolor sit amet</h1>
+            <p class="neuro-hero-subheadline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="neuro-hero-supporting">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <p class="neuro-demo-note">Demo content only. Replace all lorem ipsum copy before launch.</p>
             <div class="neurobook-cta">
-                <a class="gh-head-button" href="/pricing/">Get Instant Access</a>
-                <a class="gh-head-link" href="#course-sections">See What's Inside</a>
+                <a class="gh-head-button" href="/pricing/">Get Lifetime Access</a>
+                <a class="gh-head-link" href="#course-sections">See what's inside</a>
             </div>
         </div>
     {{/match}}
@@ -45,12 +46,15 @@ into the {body} of the default.hbs template --}}
 <main id="site-main" class="site-main neuro-landing">
     <section class="outer neuro-section">
         <div class="inner neuro-card-wrap">
-            <article class="post-card neuro-card-wide">
+            <article class="post-card neuro-card-wide neuro-card-problem">
                 <a class="post-card-content-link" href="/pricing/">
                     <div class="post-card-content">
-                        <h2 class="post-card-title">Stop the Screen-Time Guilt.</h2>
+                        <h2 class="post-card-title">Lorem ipsum dolor sit amet</h2>
                         <div class="post-card-excerpt">
-                            Turn passive scrolling into active, neuroscience-based development.
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
                     </div>
                 </a>
@@ -66,8 +70,8 @@ into the {body} of the default.hbs template --}}
                 </a>
                 <a class="post-card-content-link" href="/parents-guide/">
                     <div class="post-card-content">
-                        <h2 class="post-card-title">NeuroBook Activity Module</h2>
-                        <div class="post-card-excerpt">A guided activity track built for better focus, movement, and calm.</div>
+                        <h2 class="post-card-title">Lorem Ipsum Module One</h2>
+                        <div class="post-card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                     </div>
                 </a>
             </article>
@@ -78,8 +82,8 @@ into the {body} of the default.hbs template --}}
                 </a>
                 <a class="post-card-content-link" href="/parents-guide/">
                     <div class="post-card-content">
-                        <h2 class="post-card-title">NeuroBook Activity Module</h2>
-                        <div class="post-card-excerpt">A guided activity track built for better focus, movement, and calm.</div>
+                        <h2 class="post-card-title">Lorem Ipsum Module Two</h2>
+                        <div class="post-card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                     </div>
                 </a>
             </article>
@@ -90,8 +94,8 @@ into the {body} of the default.hbs template --}}
                 </a>
                 <a class="post-card-content-link" href="/parents-guide/">
                     <div class="post-card-content">
-                        <h2 class="post-card-title">NeuroBook Activity Module</h2>
-                        <div class="post-card-excerpt">A guided activity track built for better focus, movement, and calm.</div>
+                        <h2 class="post-card-title">Lorem Ipsum Module Three</h2>
+                        <div class="post-card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                     </div>
                 </a>
             </article>
@@ -103,8 +107,18 @@ into the {body} of the default.hbs template --}}
             <article class="post-card neuro-card-wide neuro-highlight">
                 <a class="post-card-content-link" href="/cards/">
                     <div class="post-card-content">
-                        <h2 class="post-card-title">Special Gift: 30+ Printable Activity Cards</h2>
-                        <div class="post-card-excerpt">Included with your lifetime access.</div>
+                        <h2 class="post-card-title">Lorem Ipsum Bonus Section</h2>
+                        <div class="post-card-excerpt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Use them for:</p>
+                            <ul>
+                                <li>lorem ipsum one</li>
+                                <li>lorem ipsum two</li>
+                                <li>lorem ipsum three</li>
+                                <li>lorem ipsum four</li>
+                            </ul>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut enim ad minim veniam.</p>
+                        </div>
                     </div>
                 </a>
             </article>
@@ -114,12 +128,18 @@ into the {body} of the default.hbs template --}}
     <section class="outer neuro-section">
         <div class="inner neuro-card-wrap">
             <article class="post-card neuro-card-wide neuro-cta-final">
-                <a class="post-card-content-link" href="/pricing/">
+                <div class="post-card-content-link">
                     <div class="post-card-content">
-                        <h2 class="post-card-title">Ready to Transform Screen Time?</h2>
-                        <div class="post-card-excerpt">Start the academy today.</div>
+                        <h2 class="post-card-title">Lorem ipsum dolor sit amet consectetur</h2>
+                        <div class="post-card-excerpt">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Ut enim ad minim veniam.</p>
+                            <p>Duis aute irure dolor in reprehenderit.</p>
+                        </div>
+                        <a class="gh-head-button" href="/pricing/">Lorem ipsum CTA button</a>
+                        <p class="neuro-cta-note">Demo note: replace with final legal and sales copy.</p>
                     </div>
-                </a>
+                </div>
             </article>
         </div>
     </section>

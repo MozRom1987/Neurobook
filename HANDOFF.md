@@ -58,6 +58,10 @@ docker logs -f neurobook-ghost
    - Stripe automation
    - Cards upgrade tier
 
+## Demo Content Warning
+- Homepage and static pages currently use demo/lorem ipsum copy for layout testing.
+- Before release, replace all demo copy with final approved content.
+
 ## Notes
 - Do not store API keys/tokens in repo files.
 - If theme ZIP is needed, rebuild and validate before upload:
