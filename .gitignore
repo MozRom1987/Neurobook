@@ -22,6 +22,8 @@ projectFilesBackup
 .DS_Store
 
 dist/
+.ghost-docker/
+.ghost-local/
 
 config.json
 changelog.md

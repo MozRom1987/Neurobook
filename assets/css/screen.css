@@ -3038,6 +3038,100 @@ html.dark-mode .footer-cta-title {
     background: none;
 }
 
+/* NeuroBook landing sections */
+.neurobook-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.neurobook-cta .gh-head-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    height: 44px;
+}
+
+.neuro-section {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.home-template .site-header-cover {
+    display: none;
+}
+
+.home-template.has-cover .site-header-content {
+    background: #003029;
+    background: linear-gradient(135deg, #003029 0%, #00695C 100%);
+}
+
+.neuro-card-wrap {
+    max-width: 1200px;
+}
+
+.neuro-card-wide {
+    grid-column: 1 / -1;
+    min-height: 280px;
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    justify-content: center;
+}
+
+.neuro-card-wide .post-card-content-link {
+    display: flex;
+    align-items: center;
+    min-height: 280px;
+    padding: 32px;
+}
+
+.neuro-card-wide .post-card-content {
+    width: 100%;
+    text-align: center;
+}
+
+.neuro-course-grid {
+    max-width: 1200px;
+    padding-top: 0;
+}
+
+.neuro-course-grid .post-card {
+    min-height: 100%;
+}
+
+.neuro-course-grid .post-card-content-link {
+    height: 100%;
+}
+
+.neuro-highlight {
+    background-color: #f5f5f5;
+}
+
+.neuro-cta-final .post-card-title {
+    margin-bottom: 16px;
+}
+
+.neuro-footer-note {
+    margin-top: 8px;
+    color: var(--color-secondary-text);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .neurobook-cta {
+        justify-content: center;
+    }
+
+    .neuro-card-wide,
+    .neuro-card-wide .post-card-content-link {
+        min-height: 220px;
+    }
+}
+
 /*
 
 Hey! You reached the end.

@@ -20,7 +20,7 @@ into the {body} of the default.hbs template --}}
         {{/if}}
     {{/if}}
 
-    {{#match @custom.header_style "!=" "Hidden"}}
+{{#match @custom.header_style "!=" "Hidden"}}
         <div class="site-header-inner inner">
             {{#match @custom.navigation_layout "Logo on cover"}}
                 {{#if @site.logo}}
@@ -32,23 +32,95 @@ into the {body} of the default.hbs template --}}
             {{#if @site.description}}
                 <p class="site-description">{{@site.description}}</p>
             {{/if}}
+            <div class="neurobook-cta">
+                <a class="gh-head-button" href="/pricing/">Get Instant Access</a>
+                <a class="gh-head-link" href="#course-sections">See What's Inside</a>
+            </div>
         </div>
     {{/match}}
 
 </div>
 
 {{!-- The main content area --}}
-<main id="site-main" class="site-main outer">
-<div class="inner posts">
+<main id="site-main" class="site-main neuro-landing">
+    <section class="outer neuro-section">
+        <div class="inner neuro-card-wrap">
+            <article class="post-card neuro-card-wide">
+                <a class="post-card-content-link" href="/pricing/">
+                    <div class="post-card-content">
+                        <h2 class="post-card-title">Stop the Screen-Time Guilt.</h2>
+                        <div class="post-card-excerpt">
+                            Turn passive scrolling into active, neuroscience-based development.
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 
-    <div class="post-feed">
-        {{#foreach posts}}
-            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-            {{> "post-card"}}
-        {{/foreach}}
-    </div>
+    <section id="course-sections" class="outer neuro-section">
+        <div class="inner post-feed neuro-course-grid">
+            <article class="post-card">
+                <a class="post-card-image-link" href="/parents-guide/">
+                    <img class="post-card-image" src="{{asset "screenshot-desktop.jpg"}}" alt="NeuroBook course section preview">
+                </a>
+                <a class="post-card-content-link" href="/parents-guide/">
+                    <div class="post-card-content">
+                        <h2 class="post-card-title">NeuroBook Activity Module</h2>
+                        <div class="post-card-excerpt">A guided activity track built for better focus, movement, and calm.</div>
+                    </div>
+                </a>
+            </article>
 
-    {{pagination}}
+            <article class="post-card">
+                <a class="post-card-image-link" href="/parents-guide/">
+                    <img class="post-card-image" src="{{asset "screenshot-desktop.jpg"}}" alt="NeuroBook course section preview">
+                </a>
+                <a class="post-card-content-link" href="/parents-guide/">
+                    <div class="post-card-content">
+                        <h2 class="post-card-title">NeuroBook Activity Module</h2>
+                        <div class="post-card-excerpt">A guided activity track built for better focus, movement, and calm.</div>
+                    </div>
+                </a>
+            </article>
 
-</div>
+            <article class="post-card">
+                <a class="post-card-image-link" href="/parents-guide/">
+                    <img class="post-card-image" src="{{asset "screenshot-desktop.jpg"}}" alt="NeuroBook course section preview">
+                </a>
+                <a class="post-card-content-link" href="/parents-guide/">
+                    <div class="post-card-content">
+                        <h2 class="post-card-title">NeuroBook Activity Module</h2>
+                        <div class="post-card-excerpt">A guided activity track built for better focus, movement, and calm.</div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="outer neuro-section">
+        <div class="inner neuro-card-wrap">
+            <article class="post-card neuro-card-wide neuro-highlight">
+                <a class="post-card-content-link" href="/cards/">
+                    <div class="post-card-content">
+                        <h2 class="post-card-title">Special Gift: 30+ Printable Activity Cards</h2>
+                        <div class="post-card-excerpt">Included with your lifetime access.</div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class="outer neuro-section">
+        <div class="inner neuro-card-wrap">
+            <article class="post-card neuro-card-wide neuro-cta-final">
+                <a class="post-card-content-link" href="/pricing/">
+                    <div class="post-card-content">
+                        <h2 class="post-card-title">Ready to Transform Screen Time?</h2>
+                        <div class="post-card-excerpt">Start the academy today.</div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
 </main>
